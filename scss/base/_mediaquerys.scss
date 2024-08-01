@@ -1,0 +1,100 @@
+/**-APLICAR LAS MEDIAS QUERIES-**/
+
+@media screen and (max-width:1308px) {
+    .grid__container{
+        width: 100%;
+        margin: 0;
+    }  
+}
+@media screen and (max-width:1020px) {
+    .collapse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+    .navbar-nav {
+        margin: 10px;
+        flex-direction: column;
+        align-items: end;
+        color: white;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .grid__items h3 {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        width: 94%;
+        font-size: 15px;
+        margin: 20px;
+        }
+    .grid__items {
+        position: relative;
+    }
+    .dedicacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        img{
+            width:400px;
+            height:300px;
+            margin: 30px;
+
+        }
+        .dedicacion-content{
+            h2{
+                font-size: 25px;
+
+            }
+            p{
+                font-size: 12px;
+
+            }
+        }
+        .primary-button{
+            margin: 30px;
+        
+
+        }
+        .secondary-button{
+            margin: 30px;
+
+        }
+        
+    }
+
+}
+
+@media screen and (max-width:700px){
+    
+
+@media screen and (max-width:500px) {
+    .flex-container .flex-contenedor h3{
+        font-size: 19px;
+        position: absolute;
+        bottom: 50;
+        color: black;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+}
+
+//!--PAGES-DESTINOS--!//
+
+@media screen and (max-width:1000px) {
+    .container-1 {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+    
+        
+    }
+
+}
+}

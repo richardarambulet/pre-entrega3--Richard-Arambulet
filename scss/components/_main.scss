@@ -1,0 +1,323 @@
+
+main{
+    .titulo{
+    
+        h1{
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: oblique;
+            font-weight: bold;
+            color:white;
+            padding: 20px;
+            
+        }
+        h2{
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color:rgba(0, 0, 0, 0.566);
+    
+        }
+    }
+    
+
+
+//!--grilla de Grids!--//
+.grid__container {
+    width: 90%;
+    height: 700px;
+    padding: 10px;
+    gap: 5px;
+    margin: 100px;
+    font-family:"Poppins", sans-serif ;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+        "mendoza iguazu glaciar"
+        "mardel bariloche glaciar"
+        "mar del plata mendoza";
+    }
+
+.grid__items div img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.grid__items img{
+    width: 100%;
+    height: 250px;
+}
+
+.grid__items {
+    position: relative;
+}
+.grid__items h3{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.374);
+    color: white;
+    width: 100%;
+    font-size: 18px;
+}
+//!--grilla de Grids!--//
+
+        .dedicacion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+
+                width:300px;
+                height:350px;
+                margin: 20px;
+
+            }
+            .dedicacion-content{
+        
+                h2{
+                    font-size: 30px;
+                    color: white;
+                    font-weight: 600;
+
+                }
+                p{
+                    font-size: 12px;
+                    margin: 30px;
+                    color: white;
+                }       
+            }
+            .primary-button{
+                color: white;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                font-weight: 500;
+                margin: 10px;
+                &:hover{
+                    color: blue;
+                }
+            
+                
+            }
+        
+            .secondary-button{
+                color: white;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                margin: 10px;
+                &:hover{
+                    color: blue;
+                }
+                
+                
+            }
+
+        }
+        .flex-container{
+            h2{
+                font-size: 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+
+            }
+            
+            p{
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+
+            }
+            .flex-contenedor{
+                width: 100%;
+                border: 2px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                position: relative;
+                &hover{
+                    width: 800px;
+                }
+            
+                img{
+                    width: 280px;
+                    height: 180px;
+                    background: rgb(2,0,36);
+            
+                }
+                h3{
+                    font-size: 19px;
+                    position: absolute;
+                    bottom: 50;
+                    color: black;
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+
+                }
+                p{
+                    font-size: 16px;
+                    margin-top: 40px;
+                    padding:0 ;
+                    font-weight: 400;
+                    
+                }
+                a{
+                    font-size: 15px;
+                    color:white;
+                    list-style: none;
+                    width: 80%;
+                    height: 10%;
+                    margin: 20px;
+                    border: 2px solid;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color:rgba(0, 0, 139, 0.708);
+                    bottom: 0;
+                    margin-bottom: 25px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                        background-color: blue;
+                    }
+
+                }
+                div{
+                    width: 280px;
+                    height: 360px;
+                    border: 1px solid black;
+                    border-radius: 20px;
+                    font-size: 20px;
+                    color: white;
+                    background-color: silver;
+
+                }
+            }
+        }
+        .fixed{
+            width: 60px;
+            position: fixed;
+            bottom: 60px;
+            right: 50px; 
+            bottom: 20px;
+            img{
+                width: 30px;
+                height: 30px;
+
+            }
+        }
+    
+
+/**---Pages/Nosotros-**/
+.nosotros{
+
+    h1{
+        font-size: 25px;
+        color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    
+    }
+    p{
+        font-size: 15px;
+        margin: 20px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    img{
+        width: 100%;
+        height: 350px;
+
+    }
+}
+.container{
+    .row{
+        .col{
+            h2{
+                font-size: 20px;
+                color: green;
+
+            }
+            p{
+                font-size: 15px;
+                font-weight: 500;
+
+            }
+
+        }
+
+    }
+}
+
+/**---Pages/Destinos-**/
+.destinos{
+        font-size: 20px;
+        font-weight: 500;
+        flex-wrap: wrap;
+    }
+
+.container-1{
+    width: 90%;
+    margin: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.37);
+
+
+    img{
+        width: 100%;
+        height: 350px;
+
+    }
+    div{
+        width: 100px;
+    }
+}
+section{
+    h2{
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-destinos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+    img{
+        width: 350px;
+        height: 200px;
+    
+    }
+    h3{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        font-size: 15px;
+
+    }
+}
+}
+}

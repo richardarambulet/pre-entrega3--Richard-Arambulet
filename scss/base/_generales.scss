@@ -1,0 +1,42 @@
+/*!---FONTS---!*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**------ RESET------**/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    text-transform: capitalize; 
+}
+
+//! EXTENDS
+    %flex{
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,26,62,1) 0%, rgba(0,212,255,1) 0%, rgba(65,135,224,1) 44%);
+}
+.titulo{
+    width: 100%;
+    height: 300px;
+    @extend %flex;
+}
+.dedicacion {
+    @extend %flex;
+}
+//! MIXINS
+
+@mixin flex ($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+.destinos{
+    @include flex(flex,flex-start,center);
+}
+.container-1{
+    @include flex(flex, center, center);
+}
+
