@@ -374,24 +374,11 @@ footer {
   .grid__items {
     position: relative; }
   .dedicacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap; }
-    .dedicacion img {
-      width: 400px;
-      height: 300px;
-      margin: 30px; }
-    .dedicacion .dedicacion-content h2 {
-      font-size: 25px; }
-    .dedicacion .dedicacion-content p {
-      font-size: 12px; }
-    .dedicacion .primary-button {
-      margin: 30px; }
-    .dedicacion .secondary-button {
-      margin: 30px; } }
+  .dedicacion img {
+    width: 100px; } }
 
-@media screen and (max-width: 700px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .flex-container .flex-contenedor h3 {
     font-size: 19px;
     position: absolute;
@@ -403,7 +390,7 @@ footer {
     align-items: center;
     font-weight: 600; } }
 
-@media screen and (max-width: 700px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .container-1 {
     display: flex;
     justify-content: center;

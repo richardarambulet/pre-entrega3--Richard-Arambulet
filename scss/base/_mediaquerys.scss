@@ -33,42 +33,15 @@
         position: relative;
     }
     .dedicacion {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         flex-wrap: wrap;
-        img{
-            width:400px;
-            height:300px;
-            margin: 30px;
+    }
+    .dedicacion img {
+        width: 100px; 
 
-        }
-        .dedicacion-content{
-            h2{
-                font-size: 25px;
-
-            }
-            p{
-                font-size: 12px;
-
-            }
-        }
-        .primary-button{
-            margin: 30px;
-        
-
-        }
-        .secondary-button{
-            margin: 30px;
-
-        }
-        
     }
 
 }
-
-@media screen and (max-width:700px){
-    
 
 @media screen and (max-width:500px) {
     .flex-container .flex-contenedor h3{
@@ -96,5 +69,4 @@
         
     }
 
-}
 }
