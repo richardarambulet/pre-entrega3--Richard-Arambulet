@@ -44,24 +44,57 @@
 }
 
 @media screen and (max-width:500px) {
-    .flex-container .flex-contenedor h3{
-        font-size: 100px;
-        position: absolute;
-        bottom: 50;
-        color: black;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 600;
-    }
-    .row nav ul {
-        font-size: 100px;
+footer{
+    width: 100%;
+    height: 250px;
+    .row{
 
-        
+        width: 100%;
+    
+        nav{
+    
+    
+
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                
+                
+                li{
+                    font-size: 10px;
+                    flex-direction: column;
+
+
+    
+                    
+                    a{
+                    
+                    }
+    
+                    }
+                }
+            }
+        }
     }
-}
-//!--PAGES-DESTINOS--!//
+    
+        .redes{ 
+          
+            gap: 10px;
+        
+                a{
+                
+    
+            
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        
+    //!--PAGES-DESTINOS--!//
 
 @media screen and (max-width:1000px) {
     .container-1 {

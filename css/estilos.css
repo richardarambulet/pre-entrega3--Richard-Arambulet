@@ -354,18 +354,23 @@ footer {
     width: 100px; } }
 
 @media screen and (max-width: 500px) {
-  .flex-container .flex-contenedor h3 {
-    font-size: 100px;
-    position: absolute;
-    bottom: 50;
-    color: black;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600; }
-  .row nav ul {
-    font-size: 100px; } }
+  footer {
+    width: 100%;
+    height: 250px; }
+    footer .row {
+      width: 100%; }
+      footer .row nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: end; }
+        footer .row nav ul li {
+          font-size: 10px;
+          flex-direction: column; }
+  .redes {
+    gap: 10px; }
+    .redes img {
+      width: 20px;
+      height: 20px; } }
 
 @media screen and (max-width: 1000px) {
   .container-1 {
