@@ -74,23 +74,24 @@ img {
     .collapse .navbar-nav .nav-item .nav-link:hover {
       color: #14c2f7; }
 
-main .titulo h1 {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: oblique;
-  font-weight: bold;
-  color: white;
-  padding: 20px; }
-
-main .titulo h2 {
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  color: white; }
+main .titulo {
+  width: 100%; }
+  main .titulo h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    font-weight: bold;
+    color: white;
+    padding: 20px; }
+  main .titulo h2 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white; }
 
 .grid__container {
   width: 90%;
@@ -271,7 +272,8 @@ main .titulo h2 {
 .destinos {
   font-size: 20px;
   font-weight: 500;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 20px; }
 
 .container-1 {
   width: 90%;
@@ -283,25 +285,92 @@ main .titulo h2 {
   .container-1 div {
     width: 100px; }
 
-section h2 {
+.promos h2 {
   font-size: 20px;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-section .contenedor-destinos {
+.promos .contenedor-destinos {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  section .contenedor-destinos img {
+  align-items: center; }
+  .promos .contenedor-destinos img {
     width: 350px;
     height: 200px; }
-  section .contenedor-destinos h3 {
+  .promos .contenedor-destinos h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px; }
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .email h4 {
+    font-size: 20px;
+    font-weight: 550; }
+
+.gastronomia {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .gastronomia p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px; }
+  .gastronomia img {
+    width: 400px;
+    height: 250px;
+    border: solid 2px black; }
+
+.comida {
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px black; }
+  .comida h4 {
+    font-size: 20px; }
+  .comida p {
+    font-size: 15px; }
+
+.testimonios {
+  width: 100%;
+  height: 200px;
+  padding: 60px;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #021a3e 0%, #00d4ff 0%, #4187e0 44%); }
+
+h1 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+p {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.videos-contenedor {
+  width: 100%;
+  border: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .videos-contenedor iframe {
+    width: 250px;
+    height: 300px; }
+  .videos-contenedor p {
     font-size: 15px; }
 
 footer {
@@ -340,13 +409,33 @@ footer {
       width: 30px;
       height: 30px; }
 
-/**-APLICAR LAS MEDIAS QUERIES-**/
 @media screen and (max-width: 900px) {
   .dedicacion {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+    .dedicacion .dedicacion-content h2 {
+      font-size: 18px; }
+    .dedicacion .dedicacion-content p {
+      font-size: 12px; } }
+
+.container-1 {
+  flex-wrap: wrap; }
+
+.contenedor-destinos {
+  flex-wrap: wrap; }
+
+.gastronomia {
+  width: 100%;
+  height: 920px;
+  flex-wrap: wrap; }
+
+.comida {
+  width: 100%;
+  height: 550px;
+  margin: 10px;
+  flex-wrap: wrap; }
 
 @media screen and (max-width: 725px) {
   main .titulo {
@@ -379,10 +468,3 @@ footer {
     .redes img {
       width: 20px;
       height: 20px; } }
-
-@media screen and (max-width: 1000px) {
-  .container-1 {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap; } }

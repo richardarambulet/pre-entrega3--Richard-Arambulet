@@ -1,5 +1,3 @@
-/**-APLICAR LAS MEDIAS QUERIES-**/
-
 
 @media screen and (max-width:900px) {
     .dedicacion{
@@ -14,10 +12,12 @@
         .dedicacion-content{
     
             h2{
+                font-size: 18px;
         
 
             }
             p{
+                font-size: 12px;
         
             }       
         }
@@ -35,6 +35,28 @@
 
     }
 }
+.container-1{
+
+    flex-wrap: wrap;
+}
+.contenedor-destinos{
+    flex-wrap: wrap;
+}
+.gastronomia {
+    width: 100%;
+    height: 920px;
+    flex-wrap: wrap;
+  
+}
+.comida {
+    width: 100%;
+    height: 550px;
+    margin: 10px;
+    flex-wrap: wrap;
+
+}
+
+
 
 @media screen and (max-width:725px) {
     main{
@@ -108,16 +130,4 @@ footer{
         }
     
         
-    //!--PAGES-DESTINOS--!//
-
-@media screen and (max-width:1000px) {
-    .container-1 {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-wrap: wrap;
     
-        
-    }
-
-}
