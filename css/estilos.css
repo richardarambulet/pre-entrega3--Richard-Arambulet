@@ -33,7 +33,7 @@ header {
   color: black !important;
   background-image: url("../img/fondo claro.png");
   width: 100%;
-  height: 250px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -266,18 +266,26 @@ main {
 .destinos {
   font-size: 20px;
   font-weight: 500;
-  flex-wrap: wrap;
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .container-1 {
   width: 90%;
   margin: 20px;
-  border: solid 1px rgba(0, 0, 0, 0.37); }
+  border: solid 1px rgba(0, 0, 0, 0.37);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .container-1 img {
     width: 100%;
-    height: 350px; }
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .container-1 div {
-    width: 100px; }
+    width: 100%; }
 
 .promos h2 {
   font-size: 20px;
@@ -412,24 +420,20 @@ footer {
     .dedicacion .dedicacion-content h2 {
       font-size: 18px; }
     .dedicacion .dedicacion-content p {
-      font-size: 12px; } }
-
-.container-1 {
-  flex-wrap: wrap; }
-
-.contenedor-destinos {
-  flex-wrap: wrap; }
-
-.gastronomia {
-  width: 100%;
-  height: 920px;
-  flex-wrap: wrap; }
-
-.comida {
-  width: 100%;
-  height: 550px;
-  margin: 10px;
-  flex-wrap: wrap; }
+      font-size: 12px; }
+  .container-1 {
+    flex-wrap: wrap; }
+  .contenedor-destinos {
+    flex-wrap: wrap; }
+  .gastronomia {
+    width: 100%;
+    height: 920px;
+    flex-wrap: wrap; }
+  .comida {
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 725px) {
   main .titulo {
