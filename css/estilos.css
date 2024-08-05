@@ -11,13 +11,17 @@ body {
   width: 100%;
   text-transform: capitalize; }
 
-.titulo, .dedicacion {
+.titulo, .dedicacion, .destinos {
   background: #020024;
   background: radial-gradient(circle, #020024 0%, #021a3e 0%, #00d4ff 0%, #4187e0 44%); }
 
 .titulo {
   width: 100%;
   height: 300px; }
+
+.destinos {
+  width: 100%;
+  height: 100px; }
 
 .destinos {
   display: flex;
@@ -112,7 +116,7 @@ main {
   .grid__items h3 {
     position: absolute;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.374);
+    background-color: rgba(0, 0, 0, 0.509);
     color: white;
     width: 100%;
     height: 25px;
@@ -189,6 +193,7 @@ main {
     bottom: 50;
     color: black;
     width: 20%;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,20 +333,28 @@ main {
   .gastronomia img {
     width: 400px;
     height: 250px;
-    border: solid 2px black; }
+    border: solid 1px black;
+    padding: 5px; }
 
 .comida {
   width: 100%;
   height: 250px;
-  margin: 10px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid 2px black; }
   .comida h4 {
-    font-size: 20px; }
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue; }
   .comida p {
-    font-size: 15px; }
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .testimonios {
   width: 100%;
@@ -410,6 +423,24 @@ footer {
     footer .redes img {
       width: 30px;
       height: 30px; }
+
+@media screen and (max-width: 846px) {
+  .grid__items {
+    position: relative; }
+    .grid__items div {
+      width: 80%;
+      height: 250px;
+      object-fit: cover; }
+    .grid__items img {
+      width: 100%;
+      height: 250px; }
+    .grid__items h3 {
+      height: 20px;
+      font-size: 10px;
+      flex-direction: initial;
+      width: 100%;
+      height: 30px;
+      font-size: 12px; } }
 
 @media screen and (max-width: 900px) {
   .dedicacion {

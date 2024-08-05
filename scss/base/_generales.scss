@@ -26,6 +26,13 @@ body {
 .dedicacion {
     @extend %flex;
 }
+.destinos{
+    width: 100%;
+    height: 100px;
+    @extend %flex;
+
+}
+
 //! MIXINS
 
 @mixin flex ($flex, $justify, $aling){
