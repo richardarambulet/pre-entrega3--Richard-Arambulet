@@ -70,57 +70,63 @@ img {
     .collapse .navbar-nav .nav-item .nav-link:hover {
       color: #14c2f7; }
 
-main {
+main .titulo {
   width: 100%; }
-  main .titulo {
-    width: 100%; }
-    main .titulo h1 {
-      font-size: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-style: oblique;
-      font-weight: bold;
-      color: white;
-      padding: 20px; }
-    main .titulo h2 {
-      font-size: 25px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      color: white; }
+  main .titulo h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    font-weight: bold;
+    color: white;
+    padding: 20px; }
+  main .titulo h2 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: white; }
 
 .grid__container {
   width: 90%;
-  height: 800px;
-  margin: 10px;
+  height: 900px;
+  margin: 30px;
   padding: 10px;
   gap: 5px;
   font-family: "Poppins", sans-serif;
   margin-top: 5px;
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "mendoza iguazu glaciar" "mardel bariloche glaciar" "mar del plata mendoza"; }
+  .grid__container .grid__items {
+    position: relative; }
+    .grid__container .grid__items div {
+      width: 80%;
+      height: 300px;
+      object-fit: cover; }
+    .grid__container .grid__items img {
+      width: 100%;
+      height: 250px; }
+    .grid__container .grid__items h3 {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.509);
+      color: white;
+      width: 100%;
+      height: 30px;
+      font-size: 18px; }
 
-.grid__items {
-  position: relative; }
-  .grid__items div {
-    width: 80%;
-    height: 300px;
-    object-fit: cover; }
-  .grid__items img {
-    width: 100%;
-    height: 250px; }
-  .grid__items h3 {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.509);
-    color: white;
-    width: 100%;
-    height: 25px;
-    font-size: 18px; }
+.img-2 {
+  grid-column: span 2; }
+
+.img-5 {
+  grid-column: span 2; }
+
+.img-4 {
+  grid-column: span 2; }
 
 .dedicacion {
   width: 100%;
@@ -356,37 +362,28 @@ main {
     justify-content: center;
     align-items: center; }
 
-.testimonios {
-  width: 100%;
+.testigos .grid-list h2 {
+  font-size: 30px; }
+
+.testigos .grid-list p {
+  font-size: 20px; }
+
+.testigos .grid-list img {
+  width: 250px;
   height: 200px;
-  padding: 60px;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #021a3e 0%, #00d4ff 0%, #4187e0 44%); }
+  object-fit: cover; }
 
-h1 {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.testigos .grid-list img {
+  width: 250px;
+  height: 200px; }
 
-p {
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.testigos .grid-list img {
+  width: 250px;
+  height: 200px; }
 
-.videos-contenedor {
-  width: 100%;
-  border: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .videos-contenedor iframe {
-    width: 250px;
-    height: 300px; }
-  .videos-contenedor p {
-    font-size: 15px; }
+.testigos .grid-list img {
+  width: 250px;
+  height: 200px; }
 
 footer {
   width: 100%;
@@ -467,17 +464,15 @@ footer {
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 725px) {
-  main .titulo {
-    margin: 50px; }
-    main .titulo h1 {
-      font-size: 25px;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-      flex-wrap: wrap;
-      margin: 20px; }
-    main .titulo h2 {
-      font-size: 20px; } }
+  main .titulo h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    margin: 20px; }
+  main .titulo h2 {
+    font-size: 20px; } }
 
 @media screen and (max-width: 500px) {
   footer {

@@ -1,6 +1,6 @@
 
 main{
-    width: 100%;
+    
     .titulo{
         width: 100%;
         h1{
@@ -28,46 +28,56 @@ main{
 }
     .grid__container {
         width: 90%;
-        height: 800px;
-        margin: 10px;
+        height: 900px;
+        margin: 30px;
         padding: 10px;
         gap: 5px;
         font-family:"Poppins", sans-serif ;
         margin-top: 5px;
         display: grid;
-        grid-template-columns: 1.5fr 1.5fr 1.5fr ;
+        grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr ;
         grid-template-areas: (
             "mendoza iguazu glaciar"
             "mardel bariloche glaciar"
             "mar del plata mendoza");
+    
+            .grid__items {
+                position: relative;
+                div {
+                    width: 80%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+                img {
+                    width: 100%;
+                    height: 250px;
+                }
+                h3 {
+                    position: absolute;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.509);
+                    color: white;
+                    width: 100%;
+                    height: 30px;
+                    font-size: 18px;
+                }
+            }
         
         }
 
-.grid__items {
-    position: relative;
-    div {
-        width: 80%;
-        height: 300px;
-        object-fit: cover;
-
-        
-    }
-    img {
-        width: 100%;
-        height: 250px;
-    
-    }
-    h3 {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.509);
-        color: white;
-        width: 100%;
-        height: 25px;
-        font-size: 18px;
-    }
+.img-2 {
+    grid-column: span 2;
+}     
+.img-5 {
+grid-column: span 2;
 }
+.img-4 {
+    grid-column: span 2;
+    }
+    
+
+
 
     .dedicacion {
             width: 100%;
@@ -394,47 +404,52 @@ main{
 
 
 //! Pages/Testimonios
-.testimonios{
-    width: 100%;
-    height: 200px;
-    padding: 60px;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,26,62,1) 0%, rgba(0,212,255,1) 0%, rgba(65,135,224,1) 44%);
+
+.testigos {
+    
+    .grid-list {
+
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .grid-list {
+            img {
+                width: 250px;
+                height: 200px;
+                object-fit: cover;
+            }   
+
+    
+
+    }
+    .grid-list {
+        img{
+            width: 250px;
+            height: 200px;
+
+        }
+
+    }
+    .grid-list {
+        img{
+            width: 250px;
+            height: 200px;
+            
+        }
+    }
+    .grid-list {
+        img{
+            width: 250px;
+            height: 200px;
+
+        }
+    }
 }
-    h1{
-        font-size: 20px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
 
-    }
-    p{
-        font-size: 15px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-    }
-
-    .videos-contenedor{
-        width: 100%;
-        border: 2px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        flex-wrap: wrap;
-
-                iframe{ 
-                    width: 250px;
-                    height: 300px;
-                }
-                p{
-                    font-size: 15px;
-
-
-                }
-
-            }
-        
     
 
     
