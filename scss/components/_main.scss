@@ -1,7 +1,5 @@
 
 main{
-    
-    .titulo{
         width: 100%;
         h1{
             font-size: 30px;
@@ -25,7 +23,7 @@ main{
         }
     }
     
-}
+
     .grid__container {
         width: 90%;
         height: 900px;
@@ -63,18 +61,19 @@ main{
                     font-size: 18px;
                 }
             }
+    
+            .img-2 {
+                grid-column: span 2;
+            }     
+            .img-3 {
+            grid-column: span 2;
+            }
         
+                .img-6 {
+                    grid-column: span 2;
+                    }
         }
 
-.img-2 {
-    grid-column: span 2;
-}     
-.img-5 {
-grid-column: span 2;
-}
-.img-4 {
-    grid-column: span 2;
-    }
     
 
 
@@ -94,7 +93,7 @@ grid-column: span 2;
             }
             .dedicacion-content{
                 h2{
-                    font-size: 30px;
+                    font-size: 25px;
                     color: white;
                     font-weight: 600;
                     display: flex;
@@ -103,7 +102,7 @@ grid-column: span 2;
 
                 }
                 p{
-                    font-size: 15px;
+                    font-size: 18px;
                     margin: 30px;
                     color: white;
                 }       
@@ -117,7 +116,7 @@ grid-column: span 2;
                     font-weight: 500;
                     margin: 10px;
                     &:hover{
-                        color: blue;
+                        color: rgba(0, 0, 255, 0.584);
                     }
                 }
             
@@ -135,24 +134,18 @@ grid-column: span 2;
         }
             
         .flex-container {
-
-            h2 {
-                font-size: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: 700;
-            }
             p{
-                font-size: 20px;
+                font-size: 30px;
+                font-weight: 600;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-top: 20px;
             }
         }
             .flex-contenedor{
                 width: 100%;
-                border: 2px;
+                border: 3px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -165,24 +158,13 @@ grid-column: span 2;
                 img{
                     width: 280px;
                     height: 180px;
-                    background: rgb(2,0,36);
-            
                 }
-                h3{
-                    font-size: 19px;
-                    position: absolute;
-                    bottom: 50;
-                    color: black;
-                    width: 20%;
-                    height: 10px;
+            
+                p{
+                    font-size: 16px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    font-weight: 600;
-
-                }
-                p{
-                    font-size: 16px;
                     margin-top: 40px;
                     padding:0 ;
                     font-weight: 400;
@@ -194,8 +176,7 @@ grid-column: span 2;
                     list-style: none;
                     width: 80%;
                     height: 10%;
-                    margin: 20px;
-                    border: 2px solid;
+                    margin: 30px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -212,11 +193,18 @@ grid-column: span 2;
                 div{
                     width: 280px;
                     height: 360px;
-                    border: 1px solid black;
+                
                     border-radius: 20px;
                     font-size: 20px;
                     color: white;
-                    background-color: silver;
+                    background-color: rgba(0, 0, 0, 0.541);
+                    transition: 1s;
+                    &:hover{
+                    transform: scale(1.1);
+                    }
+                    box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.6);
+                    -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.6);
+                    -moz-box-shadow:-1px 10px 42px -7px rgba(0, 0, 0, 0.6);
 
                 }
             }
@@ -237,31 +225,60 @@ grid-column: span 2;
 
 //! Pages/Nosotros
 .nosotros{
-
-    h1{
-        font-size: 25px;
-        color: green;
+h1{
+    color: black;
+    font-size: 25px;
+}
+    .nosotros-historia{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        h1{
+            font-size: 25px;
+            color: green;
+            
+            padding: 10px;
+        
+        }
+        p{
+            font-size: 15px;
+            margin: 20px;
+            font-weight: 500;
+            color: black;
+            
+        }
+        img{
+            width: 80%;
+            height: 350px;
+    
+            
+            
+    
+    
+        }
+    }
+    .container{
+        .row{
+            .col{
+                h2{
+                    font-size: 20px;
+                    color: green;
+    
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 500;
+    
+                }
+    
+            }
+    
+        }
+    }
     
     }
-    p{
-        font-size: 15px;
-        margin: 20px;
-        font-weight: 500;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    img{
-        width: 100%;
-        height: 350px;
+    
 
-    }
-}
 .container{
     .row{
         .col{
@@ -281,15 +298,12 @@ grid-column: span 2;
     }
 }
 
+//! Pages/Destinos
+
 .destinos{
         font-size: 20px;
         font-weight: 500;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
+    
     }
 
 .container-1{
@@ -310,6 +324,7 @@ grid-column: span 2;
     }
     div{
         width: 100%;
+        
     }
 }
 .promos {
@@ -404,53 +419,73 @@ grid-column: span 2;
 
 
 //! Pages/Testimonios
-
-.testigos {
-    
-    .grid-list {
-
-        h2{
-            font-size: 30px;
-        }
-        p{
-            font-size: 20px;
-        }
-    }
-    .grid-list {
-            img {
-                width: 250px;
-                height: 200px;
-                object-fit: cover;
-            }   
-
-    
-
-    }
-    .grid-list {
-        img{
-            width: 250px;
-            height: 200px;
-
-        }
-
-    }
-    .grid-list {
-        img{
-            width: 250px;
-            height: 200px;
-            
-        }
-    }
-    .grid-list {
-        img{
-            width: 250px;
-            height: 200px;
-
-        }
+.familia{
+    h1 {
+        font-size: 20px;
+        color: black;
     }
 }
+.testimonios-mardel{
 
-    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
 
-    
+    h1{
+        color: black;
+        font-size: 20px;
+    }
+
+        img{
+            width:400px;
+            height:300px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+
+        }
+        p{
+            font-size: 13px;
+            margin: 20px;
+            font-weight: 600;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+    }
+
+
+
+
+    //! Pages/Contactanos
+.contactanos { 
+
+    h1{
+        font-size: 25px;
+        font-weight: 700;
+        color:rgba(255, 255, 255, 0.667);
+
+    }
+    h5{
+        font-size: 20px;
+        font-weight: 600;
+        color:rgba(255, 255, 255, 0.667);
+
+
+    }
+}
+.contacto-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contacto-maps{
+        width: 800px;
+        height: 400px;
+
+    }
+
+    }
+
 

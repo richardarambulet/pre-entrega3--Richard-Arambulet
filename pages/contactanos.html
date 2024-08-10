@@ -60,56 +60,73 @@
         </nav>
     </header>  
 <main>
-    <section>
-        <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26273.912488476908!2d-58.46174826474435!3d-34.598115942661444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0c687ee0b7%3A0x879b67a1fd77fb98!2sVilla%20Crespo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721066154494!5m2!1ses!2sar"
-        width="80%" height="350px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <section class="contactanos">
+        <h1>Bienvenidos a tu Agencia Aventura</h1>
+        <h5>Registrate asi podras recibir notificaciones de promociones de viajes con hospedaje,
+            promociones para tu familia</h5>
     </section>
-    <section>
-        <form action="" method="" enctype="">
-            <div>
-                <span class="opensas size24 slim">Contacto</span>
+            <section class="contacto-container">
+                <div class=" contacto-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26273.912488476908!2d-58.46174826474435!3d-34.598115942661444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0c687ee0b7%3A0x879b67a1fd77fb98!2sVilla%20Crespo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1721066154494!5m2!1ses!2sar"
+                    width="600px" height="400px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    </div>
+                <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                    </div>
+                    <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                        Aceptar términos y condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                        You must agree before submitting.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Registrarse</button>
+                    </div>
+                </form>
             </div>
-        <div>
-            <label for="Nombre"></label>
-            <input type="text" name="nombre"
-            id="nombre"  placeholder="Nombre">
-        </div>
-        <div>
-            <label for="apellido"></label>
-            <input type="text" name="apellido"
-            id="apellido" placeholder="Apellido">
-        </div>
-        <div>
-            <label for="ciudad"></label>
-            <input type="text" name="ciudad"
-            id="ciudad" placeholder="Ciudad">
-        </div>
-        <div>
-            <label for="pais"></label>
-            <input type="text" name="Pais"
-            id="Pais" placeholder="Pais">
-        </div>
-        <div>
-            <label for="telefono"></label>
-            <input type="text" name="telefono"
-            id="telefono" placeholder=" Telefono">
-        </div>
-        <div>
-            <label for="email"></label>
-            <input type="text" name="Email"
-            id="Email" placeholder="Email:" >
-        </div>
-        <textarea name="" id="" cols="40" rows="3" placeholder="Deje sus comentarios,  cuándo quiere viajar y cuántos viajeros son"></textarea>
-        <div>
-            <input type="submit">
-            <input type="reset">
-    
-        </div>
-        
     </section>
-
 </main>
 <footer>
     <section>
