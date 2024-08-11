@@ -11,7 +11,7 @@ body {
   width: 100%;
   text-transform: capitalize; }
 
-.contacto-titulo, .contactanos, .titulo, .dedicacion, .destinos {
+.contacto-titulo, .contactanos, .titulo, .dedicacion, .destinos, .familia, .nosotros {
   background: #020024;
   background: radial-gradient(circle, #020024 0%, #021a3e 0%, #00d4ff 0%, #4187e0 44%); }
 
@@ -24,6 +24,14 @@ body {
   height: 150px; }
 
 .destinos {
+  width: 100%;
+  height: 100px; }
+
+.familia {
+  width: 100%;
+  height: 100px; }
+
+.nosotros {
   width: 100%;
   height: 100px; }
 
@@ -239,32 +247,26 @@ main {
 
 .nosotros h1 {
   color: black;
-  font-size: 25px; }
+  font-size: 25px;
+  color: white; }
 
-.nosotros .nosotros-historia {
+.nosotros-historia {
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .nosotros .nosotros-historia h1 {
+  align-items: center;
+  margin-top: 20px; }
+  .nosotros-historia h1 {
     font-size: 25px;
     color: green;
     padding: 10px; }
-  .nosotros .nosotros-historia p {
+  .nosotros-historia p {
     font-size: 15px;
     margin: 20px;
     font-weight: 500;
     color: black; }
-  .nosotros .nosotros-historia img {
+  .nosotros-historia img {
     width: 80%;
     height: 350px; }
-
-.nosotros .container .row .col h2 {
-  font-size: 20px;
-  color: green; }
-
-.nosotros .container .row .col p {
-  font-size: 15px;
-  font-weight: 500; }
 
 .container .row .col h2 {
   font-size: 20px;
@@ -274,9 +276,19 @@ main {
   font-size: 15px;
   font-weight: 500; }
 
+.container .row .col h2 {
+  font-size: 20px;
+  color: rgba(0, 0, 255, 0.733);
+  font-weight: 600; }
+
+.container .row .col p {
+  font-size: 15px;
+  font-weight: 500; }
+
 .destinos {
   font-size: 20px;
-  font-weight: 500; }
+  font-weight: 500;
+  color: white; }
 
 .container-1 {
   width: 90%;
@@ -306,13 +318,14 @@ main {
   justify-content: space-around;
   align-items: center; }
   .promos .contenedor-destinos img {
-    width: 350px;
-    height: 200px; }
+    width: 450px;
+    height: 250px; }
   .promos .contenedor-destinos h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 15px; }
+    font-size: 15px;
+    font-family: cursive; }
 
 .email {
   display: flex;
@@ -331,7 +344,8 @@ main {
   .gastronomia p {
     font-size: 15px;
     font-weight: 600;
-    margin: 10px; }
+    margin: 10px;
+    font-family: cursive; }
   .gastronomia img {
     width: 400px;
     height: 250px;
@@ -360,16 +374,16 @@ main {
 
 .familia h1 {
   font-size: 20px;
-  color: black; }
+  color: white; }
 
 .testimonios-mardel {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px; }
-  .testimonios-mardel h1 {
-    color: black;
-    font-size: 20px; }
+  .testimonios-mardel h2 {
+    color: rgba(0, 0, 0, 0.783);
+    font-size: 25px; }
   .testimonios-mardel img {
     width: 400px;
     height: 300px;
@@ -379,28 +393,72 @@ main {
   .testimonios-mardel p {
     font-size: 13px;
     margin: 20px;
-    font-weight: 600;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-family: cursive; }
 
-.contactanos h1 {
-  font-size: 25px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.667); }
-
-.contactanos h5 {
-  font-size: 20px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.667); }
-
-.contacto-container {
+.testimonios-bariloche {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .testimonios-bariloche h2 {
+    color: rgba(0, 0, 0, 0.783);
+    font-size: 25px; }
+  .testimonios-bariloche img {
+    width: 100%;
+    height: 300px; }
+  .testimonios-bariloche p {
+    font-size: 15px;
+    font-family: cursive; }
+
+.testimonios-mendoza {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .testimonios-mendoza img {
+    width: 100%;
+    height: 200px;
+    gap: 5px;
+    border: solid 0.5px black; }
+
+.testimonio-text {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .testimonio-text p {
+    font-size: 14px;
+    font-family: cursive;
+    margin: 10px; }
+
+.contactanos {
+  width: 100%;
+  height: 100px; }
+  .contactanos h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: white; }
+
+.contacto-container {
+  margin: 30px; }
   .contacto-container .contacto-maps {
-    width: 800px;
-    height: 400px; }
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contacto-container .contacto-maps p {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .contacto-container .row {
+    width: 90%;
+    height: 400px;
+    margin: 30px;
+    border: solid 1px black;
+    background-color: rgba(128, 128, 128, 0.776); }
+  .contacto-container h5 {
+    font-size: 15px; }
 
 footer {
   width: 100%;
