@@ -174,15 +174,20 @@ main {
     .dedicacion .buttons-content .secondary-button:hover {
       color: blue; }
 
-.flex-container p {
+.flex-container h2 {
+  color: black;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 600; }
+
+.flex-container p {
+  font-size: 25px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px; }
 
-.flex-contenedor {
+.flex-container .flex-contenedor {
   width: 100%;
   border: 3px;
   display: flex;
@@ -190,12 +195,12 @@ main {
   align-items: center;
   flex-wrap: wrap;
   position: relative; }
-  .flex-contenedorhover {
+  .flex-container .flex-contenedorhover {
     width: 800px; }
-  .flex-contenedor img {
+  .flex-container .flex-contenedor img {
     width: 280px;
     height: 180px; }
-  .flex-contenedor p {
+  .flex-container .flex-contenedor p {
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -203,7 +208,7 @@ main {
     margin-top: 40px;
     padding: 0;
     font-weight: 400; }
-  .flex-contenedor a {
+  .flex-container .flex-contenedor a {
     font-size: 15px;
     color: white;
     list-style: none;
@@ -218,9 +223,9 @@ main {
     margin-bottom: 25px;
     text-decoration: none;
     transition: 0.5s; }
-    .flex-contenedor a:hover {
+    .flex-container .flex-contenedor a:hover {
       background-color: blue; }
-  .flex-contenedor div {
+  .flex-container .flex-contenedor div {
     width: 280px;
     height: 360px;
     border-radius: 20px;
@@ -231,7 +236,7 @@ main {
     box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: -1px 10px 42px -7px rgba(0, 0, 0, 0.6); }
-    .flex-contenedor div:hover {
+    .flex-container .flex-contenedor div:hover {
       transform: scale(1.1); }
 
 .fixed {
@@ -254,26 +259,24 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 20px; }
-  .nosotros-historia h1 {
-    font-size: 25px;
-    color: green;
-    padding: 10px; }
   .nosotros-historia p {
     font-size: 15px;
     margin: 20px;
     font-weight: 500;
-    color: black; }
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .nosotros-historia img {
-    width: 80%;
+    width: 60%;
     height: 350px; }
 
 .container .row .col h2 {
-  font-size: 20px;
-  color: green; }
+  font-size: 20px; }
 
 .container .row .col p {
   font-size: 15px;
-  font-weight: 500; }
+  font-family: monospace; }
 
 .container .row .col h2 {
   font-size: 20px;
@@ -333,6 +336,9 @@ main {
   .email h4 {
     font-size: 20px;
     font-weight: 550; }
+
+.dedicacion h2 {
+  margin: 20px; }
 
 .gastronomia {
   width: 100%;
@@ -477,26 +483,31 @@ main {
     justify-content: center;
     align-items: center; }
 
-.contacto-container {
+.contacto-maps {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 30px; }
-  .contacto-container .contacto-maps {
-    width: 100%;
-    height: 500px;
+
+.formulario {
+  width: 100%;
+  height: 400px;
+  margin: 30px;
+  border: solid 1px black;
+  background-color: rgba(128, 128, 128, 0.573); }
+  .formulario .row {
+    font-size: 15px;
+    font-weight: 500;
+    color: black; }
+  .formulario h5 {
+    font-size: 15px;
+    color: black;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .contacto-container .contacto-maps p {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-  .contacto-container .row {
-    width: 90%;
-    height: 500px;
-    margin: 30px;
-    border: solid 1px black;
-    background-color: rgba(128, 128, 128, 0.776); }
-  .contacto-container h5 {
-    font-size: 15px; }
+    align-items: center;
+    padding: 20px; }
 
 footer {
   width: 100%;
@@ -589,6 +600,21 @@ footer {
     margin: 10px;
     flex-wrap: wrap; } }
 
+.nosotros-historia {
+  flex-wrap: wrap; }
+  .nosotros-historia p {
+    font-size: 13px; }
+  .nosotros-historia img {
+    width: 40%;
+    height: 200px; }
+
+.container .row .col h2 {
+  font-size: 15px; }
+
+.container .row .col p {
+  font-size: 13px;
+  font-weight: 500; }
+
 @media screen and (max-width: 846px) {
   .grid__container .grid__items {
     position: relative; }
@@ -607,16 +633,18 @@ footer {
       font-size: 15px;
       flex-wrap: wrap; } }
 
-.contacto-container {
-  margin: 30px; }
-  .contacto-container .row {
+@media screen and (max-width: 780px) {
+  .contacto-maps {
+    margin: 20px; }
+  .formulario {
     width: 90%;
     height: 700px;
     margin: 30px;
-    border: solid 1px black;
-    background-color: rgba(128, 128, 128, 0.776); }
-  .contacto-container h5 {
-    font-size: 15px; }
+    flex-wrap: wrap; }
+    .formulario .row {
+      font-size: 14px; }
+    .formulario h5 {
+      font-size: 14px; } }
 
 @media screen and (max-width: 725px) {
   main .titulo {
@@ -642,22 +670,3 @@ footer {
       height: 30px;
       font-size: 10px;
       flex-wrap: wrap; } }
-
-@media screen and (max-width: 500px) {
-  footer {
-    width: 100%;
-    height: 250px; }
-    footer .row {
-      width: 100%; }
-      footer .row nav ul {
-        display: flex;
-        justify-content: center;
-        align-items: end; }
-        footer .row nav ul li {
-          font-size: 10px;
-          flex-direction: column; }
-  .redes {
-    gap: 10px; }
-    .redes img {
-      width: 20px;
-      height: 20px; } }

@@ -64,8 +64,6 @@
 
 }
 
-
-
 @media screen and (max-width:900px) {
     .dedicacion{
         display: flex;
@@ -80,28 +78,19 @@
     
             h2{
                 font-size: 18px;
-        
-
             }
             p{
                 font-size: 12px;
-        
             }       
         }
         .primary-button{
-    
-        
-            
+
         }
-    
         .secondary-button{
     
-            
-            
         }
 
     }
-
 .container-1{
 
     flex-wrap: wrap;
@@ -121,8 +110,43 @@
     margin: 10px;
     flex-wrap: wrap;
 
+    }
 }
+
+//! Pages/Nosotros
+.nosotros-historia{
+flex-wrap: wrap;
+
+    p{
+        font-size: 13px;
+
+    }
+    img{
+        width: 40%;
+        height: 200px;
+
+    }
 }
+.container{
+    .row{
+        .col{
+            h2{
+                font-size: 15px;
+                
+
+            }
+            p{
+                font-size: 13px;
+                font-weight: 500;
+
+            }
+
+        }
+
+    }
+}
+
+
 
 @media screen and (max-width:846px){
     .grid__container {
@@ -151,29 +175,29 @@
         }
     }
 }
-.contacto-container{
-    margin: 30px;
 
-
-    .contacto-maps{
-
-        p{
-
-        }
-
+@media screen and (max-width:780px){
+    .contacto-maps {
+        margin: 20px;
+    
     }
-    .row{
+
+    .formulario {
     width: 90%;
     height: 700px;
     margin: 30px;
+    flex-wrap: wrap;
+    .row{
+        font-size: 14px;
 
+    }
     h5{
-        font-size: 15px;
+        font-size: 14px;
+    
     }
+}
 
-    }
-
-
+}
 
 
 @media screen and (max-width:725px) {
@@ -222,53 +246,3 @@
 
 }
         
-@media screen and (max-width:500px) {
-footer{
-    width: 100%;
-    height: 250px;
-    .row{
-
-        width: 100%;
-    
-        nav{
-    
-    
-
-            ul{
-                display: flex;
-                justify-content: center;
-                align-items: end;
-                
-                
-                li{
-                    font-size: 10px;
-                    flex-direction: column;
-
-
-    
-                    
-                    a{
-                    
-                    }
-    
-                    }
-                }
-            }
-        }
-    }
-    
-        .redes{ 
-            gap: 10px;
-        
-                a{
-                
-    
-            
-                }
-                img{
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        }
-    
