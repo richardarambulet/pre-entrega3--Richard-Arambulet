@@ -13,9 +13,10 @@
         
             }
     }
-    .testimonios-bariloche{
+    .testimonios-bariloche {
         flex-wrap: wrap;
         
+
         img{
 
         }
@@ -150,6 +151,29 @@
         }
     }
 }
+.contacto-container{
+    margin: 30px;
+
+
+    .contacto-maps{
+
+        p{
+
+        }
+
+    }
+    .row{
+    width: 90%;
+    height: 700px;
+    margin: 30px;
+
+    h5{
+        font-size: 15px;
+    }
+
+    }
+
+
 
 
 @media screen and (max-width:725px) {

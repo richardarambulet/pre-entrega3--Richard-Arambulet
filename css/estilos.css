@@ -465,11 +465,17 @@ main {
 
 .contactanos {
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .contactanos h1 {
     font-size: 20px;
     font-weight: 700;
-    color: white; }
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .contacto-container {
   margin: 30px; }
@@ -485,7 +491,7 @@ main {
       align-items: center; }
   .contacto-container .row {
     width: 90%;
-    height: 400px;
+    height: 500px;
     margin: 30px;
     border: solid 1px black;
     background-color: rgba(128, 128, 128, 0.776); }
@@ -600,6 +606,17 @@ footer {
       height: 25px;
       font-size: 15px;
       flex-wrap: wrap; } }
+
+.contacto-container {
+  margin: 30px; }
+  .contacto-container .row {
+    width: 90%;
+    height: 700px;
+    margin: 30px;
+    border: solid 1px black;
+    background-color: rgba(128, 128, 128, 0.776); }
+  .contacto-container h5 {
+    font-size: 15px; }
 
 @media screen and (max-width: 725px) {
   main .titulo {
