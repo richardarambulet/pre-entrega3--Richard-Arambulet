@@ -26,6 +26,8 @@ body {
     @extend %flex;
 }
 .contactanos {
+    width: 100%;
+    height: 100px;
     @extend %flex;
 }
 .titulo{
@@ -34,6 +36,8 @@ body {
     @extend %flex;
 }
 .dedicacion {
+    width: 100%;
+    height: 100px;
     @extend %flex;
 }
 .destinos{

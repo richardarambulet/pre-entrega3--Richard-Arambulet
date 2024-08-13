@@ -221,12 +221,17 @@
     
 
 //! Pages/Nosotros
-.nosotros{
-h1{
-    color: black;
-    font-size: 25px;
-    color:white;
-}
+    .nosotros{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    h1{
+        color: black;
+        font-size: 25px;
+        color:white;
+        margin: 20px;
+
+    }
 }
 
     .nosotros-historia{
@@ -289,11 +294,14 @@ h1{
 
 //! Pages/Destinos
 
-.destinos{
-        font-size: 20px;
-        font-weight: 500;
-        color:white;
-
+.destinos {
+        h1{
+            font-size: 20px;
+            font-weight: 500;
+            color:white;
+            margin: 20px;
+        }
+        
     }
 
 .container-1{
@@ -352,12 +360,19 @@ h1{
     align-items: center;
     h4{
         font-size: 20px;
-        font-weight: 550;
+        font-weight: 500;
+    }
+    label{
+        width: 50px;
+        height: 50px;
     }
 }
-.dedicacion{
+.destinos {
+
     h2 {
         margin: 20px;
+        font-size: 20px;
+        color: white;
     }
 }
     .gastronomia {
@@ -416,10 +431,14 @@ h1{
 
 //! Pages/Testimonios
 
-.familia{
+.dedicacion {
+    display: flex;
+    justify-content:start;
+    align-items: center;
     h1 {
+        margin: 20px;
         font-size: 20px;
-        color:white;
+        color: white;
     }
 }
 .testimonios-mardel {
@@ -539,35 +558,48 @@ h1{
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items:center;
+    margin: 20px;
 
     h1 {
         font-size: 20px;
         font-weight: 700;
         color:white;
-        display: flex;
-        justify-content: center;
-        align-items:center;
+        margin: 20px;
     }
 }
 
     .contacto-maps {
-        width: 100%;
+        width: 80%;
         height: 500px;
         display: flex;
         justify-content: center;
         align-items:center;
         margin: 30px;
+        img{
+            width: 30px;
+            height: 30px;
+            margin: 20px;
+        }
+        h2{
+            font-size: 15px;
+            margin: 10px;
+            font-weight: 500;
+            font-family: cursive;
+        }
     }
 
 
     .formulario {
-    width: 100%;
-    height: 400px;
-    margin: 30px;
-    border: solid 1px black;
-    background-color:rgba(128, 128, 128, 0.573);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 80%;
+        height: 400px;
+        margin: 30px;
+        border: solid 1px black;
+        background-color:rgba(128, 128, 128, 0.573);
     
     .row{
         font-size: 15px;
