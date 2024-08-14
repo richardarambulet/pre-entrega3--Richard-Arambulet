@@ -298,5 +298,23 @@ footer{
                 }
             
             }
+    }
+    @media screen and (max-width:530px){
+        .titulo{
+            height: 120px;
+            h1{
+                font-size: 15px;
+                font-style: oblique;
+                font-weight: 500;
+                color:white;
+                padding: 10px;   
+            }
+            h2 {
+                font-size: 13px;
+                
     
+        
+            }
+        }
+
     }
