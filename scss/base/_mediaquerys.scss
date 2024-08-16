@@ -176,28 +176,38 @@
 
 .contacto-container{
     margin: 30px;
+}
+}
 
+@media screen and (max-width:780px){
+    .contacto-maps {
+        flex-wrap: wrap;
+        height: 650px;
 
-    .contacto-maps{
-
-        p{
-
+        margin: 30px;
+        img{
+            
+        }
+        h2{
 
         }
-
     }
+
+    .formulario {
+        height: 600px;
+        
     .row{
-    width: 90%;
-    height: 700px;
-    margin: 30px;
+        font-size: 12px;
 
+    }
     h5{
-        font-size: 15px;
-    }
+        font-size: 12px;
 
     }
 }
+
 }
+
 
 
 
@@ -244,7 +254,6 @@
         }
     }
 }
-
         
 @media screen and (max-width:707px) {
 footer{
@@ -310,9 +319,8 @@ footer{
                 img{
                     width: 300px;
                     height: 200px;
-        
-        
                 }
+            }
             
             .dedicacion-content{
     
@@ -333,4 +341,4 @@ footer{
 
     }
 }
-    }
+    
