@@ -181,10 +181,10 @@
 
 @media screen and (max-width:780px){
     .contacto-maps {
-        flex-wrap: wrap;
-        height: 650px;
 
-        margin: 30px;
+        height: 500px;
+        margin-top: 5px;
+
         img{
             
         }
@@ -202,6 +202,7 @@
     }
     h5{
         font-size: 12px;
+        padding: 5px;
 
     }
 }
