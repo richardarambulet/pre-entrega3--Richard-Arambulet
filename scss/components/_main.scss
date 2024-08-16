@@ -1,44 +1,44 @@
 
-.titulo{
-        width: 100%;
-        height: 200px;
-        h1{
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-style: oblique;
-            font-weight: bold;
-            color:white;
-            padding: 20px;
+        .titulo{
+            width: 100%;
+            height: 200px;
+            h1{
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-style: oblique;
+                font-weight: bold;
+                color:white;
+                padding: 20px;
             
-        }
-        h2 {
-            font-size: 25px;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            color:white;
+            }
+            h2 {
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                color:white;
     
-        }
-    }
+                }
+            }
     
 
-    .grid__container {
-        width: 90%;
-        height: 900px;
-        margin: 30px;
-        padding: 10px;
-        gap: 5px;
-        font-family:"Poppins", sans-serif ;
-        margin-top: 5px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr ;
-        grid-template-areas: (
-            "mendoza iguazu glaciar"
-            "mardel bariloche glaciar"
-            "mar del plata mendoza");
+        .grid__container {
+            width: 90%;
+            height: 900px;
+            margin: 30px;
+            padding: 10px;
+            gap: 5px;
+            font-family:"Poppins", sans-serif ;
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+            grid-template-areas: (
+                "mendoza iguazu glaciar"
+                "mardel bariloche glaciar"
+                "mar del plata mendoza");
     
             .grid__items {
                 position: relative;
@@ -72,9 +72,10 @@
                 .img-6 {
                     grid-column: span 2;
                     }
-        }
+        
+            }
 
-    .dedicacion {
+        .dedicacion {
             width: 100%;
             height: 400px;
             display: flex;
@@ -82,26 +83,30 @@
             align-items: center;
             
             img{
-
-                width:300px;
+                width:350px;
                 height:350px;
                 margin: 20px;
             }
+            
             .dedicacion-content{
+    
                 h2 {
-                    font-size: 25px;
+                    font-size: 20px;
                     color:white;
                     font-weight: 600;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                 }
-                p{
+
+                p {
                     font-size: 18px;
                     margin: 30px;
-                    color: white;                }       
+                    color: white;
+                    font-family: cursive;               
+                }       
             }
+        }
             .buttons-content{
                 .primary-button{
                     color: white;
@@ -110,12 +115,13 @@
                     align-items: center;
                     font-weight: 500;
                     margin: 10px;
+
                     &:hover{
                         color: rgba(0, 0, 255, 0.584);
                     }
                 }
-            
-                .secondary-button{
+        
+            .secondary-button{
                     color: white;
                     display: flex;
                     justify-content: end;
@@ -126,8 +132,7 @@
                     }
                 }
             }
-        }
-            
+        
         .propuesta {
             h2{
                 color: black;
@@ -212,417 +217,422 @@
                 }
             }
         
-        .fixed{
-            width: 60px;
-            position: fixed;
-            bottom: 60px;
-            right: 50px; 
-            bottom: 20px;
-            img{
-                width: 30px;
-                height: 30px;
+            .fixed{
+                width: 60px;
+                position: fixed;
+                bottom: 60px;
+                right: 50px; 
+                bottom: 20px;
+                img{
+                    width: 30px;
+                    height: 30px;
 
+                }
             }
-        }
     
 
 //! Pages/Nosotros
-    .nosotros{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-    h1{
-        color: black;
-        font-size: 25px;
-        color:white;
-        margin: 20px;
-
-    }
-}
-
-    .nosotros-historia{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        p{
-            font-size: 15px;
-            margin: 20px;
-            font-weight: 500;
+        .nosotros{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        h1{
             color: black;
+            font-size: 25px;
+            color:white;
+            margin: 20px;
+
+        }
+    }
+
+        .nosotros-historia{
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        img{
-            width: 60%;
-            height: 350px;
-        }
-    }
-    .container{
-        .row{
-            .col{
-                h2{
-                    font-size: 20px;
     
-                }
-                p{
-                    font-size: 15px;
-                    font-family: monospace;
-    
-                }
-    
-            }
-    
-        }
-    }
-    
-
-.container{
-    .row{
-        .col{
-            h2{
-                font-size: 20px;
-                color: rgba(0, 0, 255, 0.733);
-                font-weight: 600;
+            
+            img{
+                width: 80%;
+                height: 350px;
+                margin: 20px;
 
             }
             p{
-                font-size: 15px;
+                font-size: 18px;
+                margin: 20px;
                 font-weight: 500;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .container {
+            .row{
+                .col{
+                    h2{
+                        font-size: 15px;
+        
+                    }
+                    p{
+                        font-size: 13px;
+                        font-family: monospace;
+        
+                    }
+        
+                }
+        
+            }
+        }
+        
+
+        .container{
+            .row{
+                .col{
+                    h2{
+                        font-size: 15px;
+                        color: rgba(0, 0, 255, 0.733);
+                        font-weight: 600;
+
+                    }
+                    p{
+                        font-size: 13px;
+                        font-weight: 500;
+
+                    }
+
+                }
 
             }
-
         }
-
-    }
-}
 
 //! Pages/Destinos
 
-.destinos {
-        h1{
-            font-size: 20px;
-            font-weight: 500;
-            color:white;
+        .destinos {
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color:white;
+                    margin: 20px;
+                }
+                
+            }
+
+        .container-1{
+            width: 90%;
             margin: 20px;
-        }
-        
-    }
-
-.container-1{
-    width: 90%;
-    margin: 20px;
-    border: solid 1px rgba(0, 0, 0, 0.37);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    img{
-        width: 100%;
-        height: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-    div{
-        width: 100%;
-        
-    }
-}
-.promos {
-    h2{
-        font-size: 20px;
-        font-weight: 700;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-destinos{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-
-    img{
-        width: 450px;
-        height: 250px;
-    
-    }
-    h3{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        font-size: 15px;
-        font-family: cursive;
-        }
-    }
-}
-.email{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    h4{
-        font-size: 20px;
-        font-weight: 500;
-    }
-    label{
-        width: 50px;
-        height: 50px;
-    }
-}
-.destinos {
-
-    h2 {
-        margin: 20px;
-        font-size: 20px;
-        color: white;
-    }
-}
-    .gastronomia {
-        width: 100%;
-        height: 420px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-
-        p{
-            font-size: 15px;
-            font-weight: 600;
-            margin: 10px;
-            font-family: cursive;
-        
-        }
-        img {
-            width: 500px;
-            height: 250px;
-            border: solid 1px black;
-            padding: 5px;
+            border: solid 1px rgba(0, 0, 0, 0.37);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
-            
-        }
-    }
-    .comida {
-        width: 100%;
-        height: 250px;
-        margin: 20px;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        border: solid 2px black;
+            img{
+                width: 100%;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-
-
-        h4{
-            font-size: 20px;
-            display: flex;
-            justify-content:center;
-            align-items: center;
-            color: blue;
-
-
-        }
-        p{
-            font-size: 15px;
-            display: flex;
-            justify-content:center;
-            align-items: center;
-
-
-        }
-    }
-
-
-//! Pages/Testimonios
-
-.dedicacion {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content:start;
-    align-items: center;
-    h1 {
-        margin: 20px;
-        font-size: 20px;
-        color: white;
-    }
-}
-.testimonios-mardel {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 30px;
-    margin: 30px;
-
-
-        img{
-            width:400px;
-            height:400px;
-            gap: 5px;
-            border: solid 0.5px black;
-            padding: 5px;
-
-        }
-        p{
-            font-size: 13px;
-            margin: 20px;
-            font-weight: 500;
-            display: flex;
-            justify-content:center;
-            align-items: center;
-            font-family: cursive;
-        }
-    }
-    .testimonios-bariloche{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        
-        img{
-
-            width: 100%;
-            height: 300px;
-            margin: 20px;
-            gap: 5px;
-            border: solid 0.5px black;
-            padding: 5px;
-        }
-    
-        p{
-            font-size: 15px;
-            font-family: cursive;
-            margin: 20px;
-
-        }
-    }
-    .buttons-content{
-        display: flex;
-        justify-content: initial;
-        align-items: initial;
-        a{
-        color: black;
-        font-weight: 500;
-        &:hover{
-            color: blue;
-
-        }
-        }
-    }
-    .testimonios-mendoza{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        img{
-            width: 100%;
-            height: 200px;
-            gap: 5px;
-            border: solid 0.5px black;
-            margin: 5px;
-        }
-        }
-        .testimonio-text{
-            display: flex;
-            justify-content:center;
-            align-items: center;
-
-            p {
-                font-size: 14px;
-                font-family: cursive;
-                margin: 10px;
+            }
+            div{
+                width: 100%;
+                
             }
         }
-        .testimonios-iguazu{
+        .promos {
+            h2{
+                font-size: 20px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contenedor-destinos{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+
+            img{
+                width: 450px;
+                height: 250px;
+            
+            }
+            h3{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                font-size: 15px;
+                font-family: cursive;
+                }
+            }
+        }
+        .email{
             display: flex;
             justify-content:center;
             align-items: center;
-            div{
-                width: 50%;
-                height: 400px;
+            h4{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            label{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .destinos {
+
+            h2 {
+                margin: 20px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+            .gastronomia {
+                width: 100%;
+                height: 420px;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+
+                p{
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin: 10px;
+                    font-family: cursive;
+                
+                }
+                img {
+                    width: 500px;
+                    height: 250px;
+                    border: solid 1px black;
+                    padding: 5px;
+                    
+                    
+                }
+            }
+            .comida {
+                width: 100%;
+                height: 250px;
+                margin: 20px;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                border: solid 2px black;
+
+
+
                 h4{
                     font-size: 20px;
                     display: flex;
                     justify-content:center;
                     align-items: center;
-                    margin: 20px;
-    
+                    color: blue;
+
+
                 }
                 p{
-                    font-size: 16px;
-                    font-family: cursive;
-                    margin: 20px;
+                    font-size: 15px;
                     display: flex;
                     justify-content:center;
                     align-items: center;
-    
-                } 
+
+
+                }
+            }
+
+
+//! Pages/Testimonios
+
+        .mardel {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content:start;
+            align-items: center;
+            h1 {
+                margin: 20px;
+                font-size: 20px;
+                color: white;
             }
         }
-    
+        .testimonios-mardel {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            padding: 30px;
+            margin: 30px;
+
+                img{
+                    width:400px;
+                    height:400px;
+                    gap: 5px;
+                    border: solid 0.5px black;
+                    padding: 5px;
+
+                }
+                p{
+                    font-size: 13px;
+                    margin: 20px;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    font-family: cursive;
+                }
+            }
+
+
+        .testimonios-bariloche{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+            img{
+
+                width: 100%;
+                height: 300px;
+                margin: 20px;
+                gap: 5px;
+                border: solid 0.5px black;
+                padding: 5px;
+            }
+        
+            p{
+                font-size: 15px;
+                font-family: cursive;
+                margin: 20px;
+
+            }
+        }
+        .buttons-content{
+            display: flex;
+            justify-content: end;
+            align-items: initial;
+            
+            a{
+            color: black;
+            font-weight: 500;
+            &:hover{
+                color: blue;
+
+            }
+            }
+        }
+        .testimonios-mendoza{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 200px;
+                gap: 5px;
+                border: solid 0.5px black;
+                margin: 5px;
+            }
+            }
+            .testimonio-text{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+
+                p {
+                    font-size: 14px;
+                    font-family: cursive;
+                    margin: 10px;
+                }
+            }
+            .testimonios-iguazu{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                div{
+                    width: 50%;
+                    height: 400px;
+                    h4{
+                        font-size: 20px;
+                        display: flex;
+                        justify-content:center;
+                        align-items: center;
+                        margin: 20px;
+        
+                    }
+                    p{
+                        font-size: 16px;
+                        font-family: cursive;
+                        margin: 20px;
+                        display: flex;
+                        justify-content:center;
+                        align-items: center;
+        
+                    } 
+                }
+            }
+        
 
     //! Pages/Contactanos
-.contactanos { 
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: start;
-    align-items:center;
-    margin: 20px;
-
-    h1 {
-        font-size: 20px;
-        font-weight: 700;
-        color:white;
-        margin: 20px;
-    }
-}
-
-    .contacto-maps {
-        width: 80%;
-        height: 500px;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        margin: 30px;
-        img{
-            width: 30px;
-            height: 30px;
+        .contactanos { 
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: start;
+            align-items:center;
             margin: 20px;
+
+            h1 {
+                font-size: 20px;
+                font-weight: 700;
+                color:white;
+                margin: 20px;
+            }
         }
-        h2{
-            font-size: 15px;
-            margin: 10px;
-            font-weight: 500;
-            font-family: cursive;
-        }
-    }
+
+            .contacto-maps {
+                width: 80%;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                margin: 30px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin: 20px;
+                }
+                h2{
+                    font-size: 15px;
+                    margin: 10px;
+                    font-weight: 500;
+                    font-family: cursive;
+                }
+            }
 
 
-    .formulario {
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        width: 80%;
-        height: 400px;
-        margin: 30px;
-        border: solid 1px black;
-        background-color:rgba(128, 128, 128, 0.573);
-    
-    .row{
-        font-size: 15px;
-        font-weight: 500;
-        color: black;
-    }
-    h5{
-        font-size: 15px;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        padding: 20px;
-    }
-}
+            .formulario {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 80%;
+                height: 400px;
+                margin: 30px;
+                border: solid 1px black;
+                background-color:rgba(128, 128, 128, 0.573);
+            
+            .row{
+                font-size: 15px;
+                font-weight: 500;
+                color: black;
+            }
+            h5{
+                font-size: 15px;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                padding: 20px;
+            }
+        }
 
 
 

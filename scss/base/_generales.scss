@@ -14,13 +14,17 @@ body {
 
 }
 
-
 //! EXTENDS
     %flex{
         background: rgb(2,0,36);
         background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(2,26,62,1) 0%, rgba(0,212,255,1) 0%, rgba(65,135,224,1) 44%);
 }
 .contacto-titulo{
+    width: 100%;
+    height: 150px;
+    @extend %flex;
+}
+.mardel{
     width: 100%;
     height: 150px;
     @extend %flex;
@@ -37,7 +41,7 @@ body {
 }
 .dedicacion {
     width: 100%;
-    height: 100px;
+    height: 500px;
     @extend %flex;
 }
 .destinos{
