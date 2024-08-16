@@ -181,8 +181,8 @@
 
 @media screen and (max-width:780px){
     .contacto-maps {
-
-        height: 500px;
+        flex-wrap: wrap;
+        height: 600px;
         margin-top: 5px;
 
         img{
@@ -194,6 +194,7 @@
     }
 
     .formulario {
+        width: 80%;
         height: 600px;
         
     .row{
@@ -201,8 +202,9 @@
 
     }
     h5{
-        font-size: 12px;
+        font-size: 10px;
         padding: 5px;
+        flex-wrap: wrap;
 
     }
 }

@@ -552,11 +552,13 @@ img {
     color: black; }
   .formulario h5 {
     font-size: 15px;
+    margin: 10px;
     color: black;
+    padding: 20px;
+    font-family: cursive;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; }
+    justify-content: initial;
+    align-items: center; }
 
 footer {
   width: 100%;
@@ -684,15 +686,18 @@ footer {
 
 @media screen and (max-width: 780px) {
   .contacto-maps {
-    height: 500px;
+    flex-wrap: wrap;
+    height: 600px;
     margin-top: 5px; }
   .formulario {
+    width: 80%;
     height: 600px; }
     .formulario .row {
       font-size: 12px; }
     .formulario h5 {
-      font-size: 12px;
-      padding: 5px; } }
+      font-size: 10px;
+      padding: 5px;
+      flex-wrap: wrap; } }
 
 @media screen and (max-width: 725px) {
   .titulo h1 {
